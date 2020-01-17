@@ -123,14 +123,14 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
     }
 
     public void requestRender() {
-        final OverlayView overlay = (OverlayView) findViewById(R.id.overlay);
+        final OverlayView overlay = findViewById(R.id.overlay);
         if (overlay != null) {
             overlay.postInvalidate();
         }
     }
 
     public void addCallback(final OverlayView.DrawCallback callback) {
-        final OverlayView overlay = (OverlayView) findViewById(R.id.overlay);
+        final OverlayView overlay = findViewById(R.id.overlay);
         if (overlay != null) {
             overlay.addCallback(callback);
         }

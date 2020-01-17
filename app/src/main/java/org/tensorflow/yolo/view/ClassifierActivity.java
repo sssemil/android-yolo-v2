@@ -54,7 +54,7 @@ public class ClassifierActivity extends TextToSpeechActivity implements OnImageA
 
         recognizer = TensorFlowImageRecognizer.create(getAssets());
 
-        overlayView = (OverlayView) findViewById(R.id.overlay);
+        overlayView = findViewById(R.id.overlay);
         previewWidth = size.getWidth();
         previewHeight = size.getHeight();
 

@@ -23,7 +23,7 @@ import java.util.Vector;
  */
 public class YOLOClassifier {
     private final static float OVERLAP_THRESHOLD = 0.5f;
-    private final static double anchors[] = {1.08,1.19,  3.42,4.41,  6.63,11.38,  9.42,5.11,  16.62,10.52};
+    private final static double[] anchors = {1.08, 1.19, 3.42, 4.41, 6.63, 11.38, 9.42, 5.11, 16.62, 10.52};
     private final static int SIZE = 13;
     private final static int MAX_RECOGNIZED_CLASSES = 13;
     private final static float THRESHOLD = 0.3f;
